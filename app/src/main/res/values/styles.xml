@@ -2,10 +2,59 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--所有的背景-->
+        <item name="android:windowBackground">@color/color_bg</item>
         <!-- Customize your theme here. -->
+        <!--标题栏颜色-->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏颜色-->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--EditText，RaidoButoon，seekBar等的颜色-->
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppThemeNoTitle" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--头部title栏的属性-->
+    <declare-styleable name="TitleBar">
+        <attr name="TextColorLeft" format="color"/>
+        <attr name="TextColorRight" format="color"/>
+        <attr name="TextColorCenter" format="color"/>
+        <attr name="TextLeft" format="string"/>
+        <attr name="TextRight" format="string"/>
+        <attr name="TextCenter" format="string"/>
+        <attr name="TextSizeLeft" format="dimension"/>
+        <attr name="TextSizeRight" format="dimension"/>
+        <attr name="TextSizeCenter" format="dimension"/>
+        <attr name="isShowImgLeft" format="boolean"/>
+        <attr name="isShowImgRight" format="boolean"/>
+        <attr name="isShowLeft" format="boolean"/>
+        <attr name="isShowRight" format="boolean"/>
+        <attr name="srcLeft" format="color|reference"/>
+        <attr name="srcRight" format="color|reference"/>
+        <attr name="bg" format="color|reference"/>
+        <attr name="onClickLeft" format="string"/>
+        <attr name="onClickCenter" format="string"/>
+        <attr name="onClickRight" format="string"/>
+    </declare-styleable>
+
+    <style name="TitleBarDefaultStyle">
+        <item name="TextColorLeft">@android:color/white</item>
+        <item name="TextColorRight">@android:color/white</item>
+        <item name="TextColorCenter">@android:color/white</item>
+        <item name="TextCenter">Try</item>
+        <item name="TextSizeLeft">12sp</item>
+        <item name="TextSizeRight">12sp</item>
+        <item name="TextSizeCenter">18sp</item>
+        <item name="isShowImgLeft">true</item>
+        <item name="isShowImgRight">true</item>
+        <item name="isShowLeft">true</item>
+        <item name="isShowRight">false</item>
+        <item name="srcLeft">@mipmap/icon_last</item>
+        <item name="srcRight">@mipmap/icon_join_plan</item>
+        <item name="bg">@mipmap/bg_title_bar_deep</item>
     </style>
 
 </resources>

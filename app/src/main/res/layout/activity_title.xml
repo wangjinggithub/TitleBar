@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp">
+
+    <ImageView
+        android:id="@+id/iv_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_title_bar_deep" />
+
+    <FrameLayout
+        android:id="@+id/fl_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_last"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="SLine"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_join_plan"
+            android:visibility="visible" />
+    </FrameLayout>
+</RelativeLayout>
